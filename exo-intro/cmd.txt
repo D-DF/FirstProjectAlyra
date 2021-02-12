@@ -1,0 +1,69 @@
+CD
+
+cd (Change Directory) : Vous permet de vous déplacer d'un répertoire à un autre (exemple : cd/user/nom du dossier pour aller dans votre répertoire). 
+
+cd .. : Retour au dossier précèdent.
+
+cd ~ : Retour au dossier source.
+
+PWD
+
+pwd (Print Working Directory) : Vous affiche l'emplacement du répertoire dans lequel vous vous trouvez.
+
+LS
+
+ls : Affiche toute la liste de vos fichiers et dossiers.
+-C
+Présenter les fichiers en colonnes, triés verticalement.
+-F
+Ajouter un caractère à chaque nom de fichier pour indiquer son type. les fichiers réguliers exécutables sont suivis d'un « * ». Les répertoires sont suivis de « / », les liens symboliques d'un « @ », les FIFOs d'un « | ». Les fichiers réguliers non-exécutables ne sont suivis d'aucun caractère.
+-R
+Afficher récursivement le contenu des sous-répertoires.
+-a
+Afficher tous les fichiers des répertoires, y compris les fichiers commençant par un « . ».
+-c
+Employer la date de changement de statut des fichiers plutôt que la date de modification, autant pour l'affichage (option -l) que pour le tri (option -t).
+-d
+Afficher les répertoires avec la même présentation que les fichiers, sans lister leur contenu.
+-i
+Afficher le numéro d'index (i-noeud) de chaque fichier à gauche de son nom.
+-l
+En plus du nom, afficher le type du fichier, les permissions d'accès, le nombre de liens physiques, le nom du propriétaire et du groupe, la taille en octets, et l'horodatage. La ligne de résumé utilise des unités de 512 octets. Les types de fichiers sont indiqués par les caractères suivants : - pour les fichiers ordinaires, d pour un répertoire (directory), b pour un fichier spécial en mode bloc, c pour un fichier spécial en mode caractère, l pour un lien symbolique, p pour une fifo (named pipe), s pour une socket. Par défaut, l'horodatage présenté est celui de la dernière modification du fichier. Les options -c et -u réclament les autres horodatages. Pour les fichiers spéciaux, le champ de taille est généralement remplacé par les numéros majeur et mineur du périphérique.
+-q
+Afficher des points d'interrogation à la place des caractères non-imprimables dans les noms de fichiers. Il est possible que cela soit le cas par défaut lorsque la sortie standard est un terminal.
+-r
+Inverser le tri du contenu des répertoires.
+-t
+Trier le contenu des répertoires en fonction de la date et non pas en ordre alphabétique. Les fichiers les plus récents sont présentés en premier.
+-u
+Employer la date des derniers accès aux fichiers plutôt que la date de modification, autant pour l'affichage (option -l) que pour le tri (option -t).
+-1
+Présenter un fichier par ligne.
+--
+Indique la fin explicite des options.
+
+
+
+MKDIR
+
+mkdir : Permet de créer un nouveau répertoire (dossier).
+-m mode, --mode=mode
+Créer les répertoires avec le mode d'accès indiqué. Celui-ci est donné sous forme symbolique, comme dans chmod (1) en utilisant le mode par défaut comme valeur de départ.
+-p, --parents
+Créer les répertoires parents s'ils manquent. Ils sont créés avec l'autorisation d'accès umask modifiée par « u+wx ». Ne pas considérer les répertoires déjà existants comme des erreurs. Ainsi, si le répertoire /a existe, alors « mkdir /a » est une erreur, mais « mkdir -p /a » n'en est pas une.
+--verbose
+Afficher un message pour chaque répertoire créé. Ceci est essentiellement utile en conjonction avec l'option --parents.
+--
+
+RM
+
+rm : Supprimez de manière définitive un fichier (tapez "rm" puis le nom de votre fichier après un espace).
+rm -r : Permet de supprimer tous les dossiers à l'intérieur.
+rmdir : supprimer un dossier vide (plus sûre que rm).
+
+man - Fournit une aide à propos des commandes et API du système (consultation du manuel)
+
+
+SUDO
+
+Sudo permet à un utilisateur autorisé d'exécuter une commande en tant que superutilisateur ou autre utilisateur, comme spécifié par la politique de sécurité. 
