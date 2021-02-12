@@ -1,7 +1,3 @@
-let etoile   = '*';
-let pyramide = '';
-
-for (let i = 0; i < 6; i++){
-    pyramide += etoile;
-    console.log(pyramide);
-} 
+for (let index = 1; index < 9; index++) {
+    console.log("*".repeat(index));
+}
